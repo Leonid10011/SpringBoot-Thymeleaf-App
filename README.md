@@ -7,6 +7,8 @@ Built with:
 - Bootstrap for css
 - Mysql database for storage
 
+![Preview Picture](data/preview.png)
+
 # Instructions
 ## 1. Install Mysql
 Install mysql server
