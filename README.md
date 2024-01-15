@@ -4,6 +4,7 @@ This is a simple App that lists, saves, updates and deletes **Employee** entitie
 Built with:
 - Spring boot for backend 
 - Thymeleaf template engine for frontend visualization
+- Bootstrap for css
 - Mysql database for storage
 
 # Instructions
