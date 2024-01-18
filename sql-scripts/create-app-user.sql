@@ -32,7 +32,7 @@ VALUES
 
 
 --
--- Table structure for table `authorities`
+-- Table structure for table `roles`
 --
 
 CREATE TABLE `roles` (
