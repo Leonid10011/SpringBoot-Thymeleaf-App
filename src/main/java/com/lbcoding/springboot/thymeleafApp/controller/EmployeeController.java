@@ -3,10 +3,13 @@ package com.lbcoding.springboot.thymeleafApp.controller;
 import com.lbcoding.springboot.thymeleafApp.service.EmployeeService;
 import com.lbcoding.springboot.thymeleafApp.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
 import java.util.List;
 
 @Controller
@@ -19,7 +22,6 @@ public class EmployeeController {
     public EmployeeController(EmployeeService employeeService){
         this.employeeService = employeeService;
     }
-
 
     @GetMapping("/list")
     public String listEmployees(Model model) {
@@ -57,9 +59,11 @@ public class EmployeeController {
     }
 
     @GetMapping("/delete")
-    public String deleteEmployee(@RequestParam("employeeId") int id) {
+    public String deleteEmployee(@RequestParam("employeeId") int id, Principal principal) {
 
         employeeService.deleteById(id);
+
         return "redirect:/employees/list";
     }
+
 }
