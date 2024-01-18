@@ -15,7 +15,7 @@
 This is a simple App that maintains a list of **Employee** entities. 
 Based on the authorization level of the logged user, he can view, add, update or delete employees. 
 The access to the app is secured by user authentication.
-The passwords are encoded with bcypt and [this site](#https://bcrypt-generator.com/) was used to generate the encryption.
+The passwords are encoded with bcypt and [this site](https://bcrypt-generator.com/) was used to generate the encryption.
 I built the app to familiarize myself with Spring and learn how it functions.
 It serves as a hands-on project for me to gain practical experience with the framework, exploring its features and enhancing my skills in Spring development.
 
